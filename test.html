@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="b">click multiple</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let variableQueTuVeux = false;
+            let button = document.querySelector("#b");
+            button.addEventListener("click", function (e) {
+                e.preventDefault();
+                if (!variableQueTuVeux) {
+                    console.log("click");
+                    variableQueTuVeux = true;
+                }
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>
